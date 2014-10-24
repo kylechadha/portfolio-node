@@ -7,107 +7,12 @@
 @import 'global';
 @import url(http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600,600italic,700);
 
+// Components
+// -----------------------------------
+@import 'components/loader';
+@import 'components/header';
+@import 'components/about';
 
-
-/* ========TABLE OF CONTENTS========== 
-00. BODY, LINKS, SECTION TITLES, GENERAL
-01. HEADERBAR, NAVIGATION
-02. EVERY SECTION TITLES
-03. SECTION ABOUT
-  ABOUT LEFT SIDE
-  ABOUT RIGHT SIDE
-  ABOUT RIGHT CONTENT TOP
-  ABOUT RIGHT CONTENT BOTTOM
-04. SECTION RESUME
-05. SECTION SERVICES
-06. SECTION PORTOFOLIO (WORKS)
-  WORKS GRID
-  WORKS FILTERS
-07. SECTION CONTACT
-  GENERAL FORM STYLES
-  MESSAGE FOR SUCCES
-08. MEDIA QUERIES FOR RESPONSIVE DESIGN
-
-/* ========00. BODY, LINKS, SECTION TITLES, GENERAL========== */
-
-
-/*PAGE LOADER*/
-
-.loader {
-  background: #ffffff;
-  bottom: 0;
-  height: 100%;
-  left: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-  width: 100%;
-  z-index: 9999;
-}
-.loaderInner {
-  background:#ffffff url(../images/load.gif) center center no-repeat;
-  height: 60px;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  width: 60px;
-}
-
-
-/* ========01. HEADERBAR, NAVIGATION========== */
-#headerBar {
-  z-index: 999;
-    width: 100%;
-    height: auto;
-    min-height: 80px;
-    -webkit-transition: 0.2s cubic-bezier(.58,.83,.57,.84); 
-    -moz-transition: 0.2s cubic-bezier(.58,.83,.57,.84); 
-    transition: 0.2s cubic-bezier(.58,.83,.57,.84); 
-    position: fixed;
-    top: 0px;
-    background: #fff;
-  -webkit-box-shadow: 0px 7px 16px 0px rgba(50, 50, 50, 0.1);
-    -moz-box-shadow:    0px 7px 16px 0px rgba(50, 50, 50, 0.1);
-  box-shadow:         0px 7px 16px 0px rgba(50, 50, 50, 0.1);
-}
-#headerBar .container {
-  padding: 0;
-}
-.headerLeft {
-  text-align: left;
-  font-size: 36px;
-  text-transform: uppercase;
-  line-height: 80px;
-  padding: 0;
-}
-.headerRight {
-  text-align: left;
-  padding: 0;
-}
-.navbar-collapse {padding-left: 0px;}
-.navbar {margin-bottom: 0;-webkit-padding-start: 0px;}
-.navbar li{display: inline-block;margin: 0 10px;}
-.navbar li a{
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 80px;
-    letter-spacing: 2px;
-    text-decoration: none;
-    z-index: 999;
-    padding: 4px 0;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    transition: 0.3s;
-    text-transform: uppercase;
-}
-.navbar li.active a {
-  border-bottom: 1px solid #3dc9b3;
-  color: #3dc9b3;
-}
-.navbar-toggle {
-  font-size: 30px;
-  cursor: pointer;
-}
 
 /* ========02. EVERY SECTION TITLES========== */
 .sectionTitle {
