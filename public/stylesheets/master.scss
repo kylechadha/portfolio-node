@@ -35,7 +35,7 @@ html, body {
      height: 100%;
 }
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
     font-size: 14px;
     color: #222222;
     -webkit-font-smoothing: antialiased;
@@ -56,7 +56,7 @@ a:hover {
 
 /*PAGE LOADER*/
 
-#loader {
+.loader {
     background: #ffffff;
     bottom: 0;
     height: 100%;
@@ -67,7 +67,7 @@ a:hover {
     width: 100%;
     z-index: 9999;
 }
-#loaderInner {
+.loaderInner {
     background:#ffffff url(../images/load.gif) center center no-repeat;
     height: 60px;
     left: 50%;
