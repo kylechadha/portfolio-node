@@ -34,23 +34,23 @@
 /*PAGE LOADER*/
 
 .loader {
-    background: #ffffff;
-    bottom: 0;
-    height: 100%;
-    left: 0;
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 100%;
-    z-index: 9999;
+  background: #ffffff;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
 }
 .loaderInner {
-    background:#ffffff url(../images/load.gif) center center no-repeat;
-    height: 60px;
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    width: 60px;
+  background:#ffffff url(../images/load.gif) center center no-repeat;
+  height: 60px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  width: 60px;
 }
 
 
