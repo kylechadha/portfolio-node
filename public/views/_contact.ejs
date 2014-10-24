@@ -1,0 +1,96 @@
+
+    <!--section CONTACT -->
+    <section id="sectionContact">
+
+    <div class="container">
+
+      <!-- section TITLE -->
+
+      <div class="sectionTitle">
+
+            <h1>Contact</h1>
+
+              <h4>Get in touch with me</h4>
+
+                <div class="separatorlineblack"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                </p>
+
+      </div>
+      <!-- END section TITLE -->
+
+      <!-- contact FORM-->
+      <div class="contactForm">
+
+      <!--MESSAGE SENT SUCCESFULLY-->
+      <mark id="message"></mark>
+
+
+      <!--Main form-->
+      <form method="post" action="contact.php" name="contactform" id="contactform" autocomplete="on">
+        <fieldset>
+
+          <div>
+            <label class="contactLabel">Name *</label>
+            <input name="name" type="text" id="name" required="required" />
+          </div>
+
+          <div>
+            <label class="contactLabel">E-mail *</label>
+            <input name="email" type="email" id="email" pattern="^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$" required="required" />
+          </div>
+
+          <div>
+            <label class="contactLabel">Subject *</label>
+            <input name="subject" type="text" id="subject" required="required">
+          </div>
+
+        </fieldset>
+
+        <fieldset>
+
+          <div>
+            <label class="contactLabel">Your message *</label>
+            <textarea name="comments" cols="40" rows="3" id="comments" spellcheck="true" required="required"></textarea>
+          </div>
+
+        </fieldset>
+
+        <input type="submit" class="submit" id="submit" value="Send message" />
+
+      </form>
+      <!--END Main form-->
+
+      </div>
+      <!-- END contact FORM-->
+
+      </div>
+      <!-- END container -->
+
+
+      <!-- footer CONTACT-->
+      <footer class="contactFooter">
+
+        <div class="container">
+
+          <!-- COPYRIGHT-->
+          <div class="col-md-6 col-sm-6 col-xs-12 footerLeft">
+            Audentes fortuna juvat
+          </div>
+
+          <!-- SOCIAL ICONS -->
+          <div class="col-md-6 col-sm-6 col-xs-12 footerRight">
+            <a href="#"><span class="icon-facebook"></span></a>
+            <a href="#"><span class="icon-twitter"></span></a>
+            <a href="#"><span class="icon-googleplus"></span></a>
+            <a href="#"><span class="icon-dribbble"></span></a>
+        </div>
+
+      </div>
+      <!-- END container-->
+
+      </footer>
+      <!-- END footer CONTACT-->
+
+      </section>
+      <!--END section CONTACT -->
