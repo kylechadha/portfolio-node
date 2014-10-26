@@ -1,15 +1,21 @@
+/* ========06. SECTION PORTOFOLIO (WORKS)========== */
 #sectionProjects {
+  padding-bottom: 100px;
+}
+
+
+.portfolio {
   text-align: center;
   padding-top: 95px;
   overflow: hidden;
   /*margin-top: -95px;*/
 }
 
-#sectionProjects p {
+.portfolio p {
   padding: 0 60px 30px 60px;
 }
 
-#sectionProjects .nav-bar {
+.portfolio .nav-bar {
   width: 286px;
   padding: 0 40px;
   text-align: left;
@@ -19,7 +25,7 @@
   /*margin: 0 41px 40px 0;*/
 }
 
-#sectionProjects .nav-bar a {
+.portfolio .nav-bar a {
   color: #919191;
   font-size: 18px;
   line-height: 30px;
@@ -27,18 +33,18 @@
   margin: 0 0 -3px 0;
 }
 
-#sectionProjects .nav-bar a:hover:after,
-#sectionProjects .nav-bar a:hover:before {
+.portfolio .nav-bar a:hover:after,
+.portfolio .nav-bar a:hover:before {
   display: none;
 }
 
-#sectionProjects .nav-bar .current a,
-#sectionProjects .nav-bar a:hover {
+.portfolio .nav-bar .current a,
+.portfolio .nav-bar a:hover {
   color: #fff;
   text-decoration: none;
 }
 
-#sectionProjects .nav-bar h4 {
+.portfolio .nav-bar h4 {
   color: #fff;
   font-size: 18px;
   line-height: 24px;
@@ -47,28 +53,28 @@
   padding: 35px 0 16px 0;
 }
 
-#sectionProjects section {
+.portfolio section {
   overflow: hidden;
   clear: both;
   margin: 20px -50px 60px 0;
 }
 
-#sectionProjects article {
+.portfolio article {
   float: left;
   margin: 0 41px 40px 0;
 }
 
 
-#sectionProjects article a {
+.portfolio article a {
   position: relative;
   display: block;
 }
 
-#sectionProjects a {
+.portfolio a {
   border: 5px solid #252e30;
 }
 
-#sectionProjects a:before {
+.portfolio a:before {
   background: #2ecc71;
   position: absolute;
   content: "";
@@ -83,7 +89,7 @@
   filter: alpha(opacity=0);
 }
 
-#sectionProjects a:after {
+.portfolio a:after {
   background: url(../images/ico_search.png) no-repeat 49% 51%;
   position: absolute;
   content: "";
@@ -97,21 +103,21 @@
   transition: all .2s ease;
 }
 
-#sectionProjects li a:before,
-#sectionProjects li a:after {
+.portfolio li a:before,
+.portfolio li a:after {
   display: none;
 }
 
-#sectionProjects a:hover:before {
+.portfolio a:hover:before {
   opacity: 0.75;
   filter: alpha(opacity=75);
 }
 
-#sectionProjects a:hover:after {
+.portfolio a:hover:after {
   opacity: 1;
   filter: alpha(opacity=100);
 }
 
-#sectionProjects-title {
+.portfolio-title {
   display: none;
 }
