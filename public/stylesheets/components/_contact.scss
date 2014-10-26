@@ -23,9 +23,28 @@
   text-align: right;
   font-size: 40px;
 }
-.footerRight a{
+.footerRight a {
   color: skyblue;
+
 }
 .footerRight a:hover {
   color: #fff;
 }
+.rotate{
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+   
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+}
+ 
+.rotate:hover  
+{
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+}  
