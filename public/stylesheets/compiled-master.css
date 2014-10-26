@@ -106,42 +106,6 @@ a:hover {
   font-size: 30px;
   cursor: pointer; }
 
-/* ========02. EVERY SECTION TITLES========== */
-.sectionTitle {
-  text-align: center;
-  padding-top: 75px;
-  padding-bottom: 25px; }
-
-.sectionTitle h1 {
-  letter-spacing: 1px;
-  font-size: 24px;
-  font-weight: 600;
-  text-transform: uppercase; }
-
-.sectionTitle h4 {
-  letter-spacing: 1px;
-  font-size: 12px;
-  font-weight: 400;
-  text-transform: uppercase;
-  padding-bottom: 5px; }
-
-.sectionTitle p {
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 25px;
-  color: #787878;
-  font-family: 'Crimson Text', serif;
-  font-style: italic; }
-
-.sectionTitle .separatorlineblack {
-  margin-bottom: 30px; }
-
-.separatorlineblack {
-  width: 100px;
-  height: 2px;
-  margin: 0 auto;
-  background: #000; }
-
 /* ========03. SECTION ABOUT========== */
 #sectionAbout {
   text-align: center;
@@ -234,11 +198,9 @@ a:hover {
   margin-top: 30px; }
 
 .aboutIntro p {
-  font-size: 17px;
-  font-weight: 300;
-  color: #787878;
-  font-family: 'Crimson Text', serif;
-  font-style: italic; }
+  font-size: 14px;
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #787878; }
 
 /* ====ABOUT RIGHT CONTENT BOTTOM==== */
 .aboutRightContentBottom {
@@ -266,6 +228,79 @@ a.scroll-down {
   padding: 10px 20px;
   text-transform: uppercase;
   font-size: 13px; }
+
+#sectionServices {
+  background: #eee;
+  padding-bottom: 50px; }
+
+.servicesCol4 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  overflow: hidden;
+  min-height: 215px; }
+
+.servicesCol4 h3 {
+  font-size: 15px;
+  margin-top: 0px;
+  padding-top: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: left; }
+
+.servicesCol4 p {
+  font-size: 14px;
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: left;
+  color: #666;
+  padding-top: 10px; }
+
+.servicesCol4 span {
+  font-size: 40px;
+  text-align: center;
+  color: #3dc9b3; }
+
+.servicesLeft {
+  float: left; }
+
+.servicesRight {
+  padding-left: 23%;
+  padding-right: 2%; }
+
+/* ========02. EVERY SECTION TITLES========== */
+.sectionTitle {
+  text-align: center;
+  padding-top: 75px;
+  padding-bottom: 25px; }
+
+.sectionTitle h1 {
+  letter-spacing: 1px;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+.sectionTitle h4 {
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-bottom: 5px; }
+
+.sectionTitle p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 25px;
+  color: #787878;
+  font-family: 'Crimson Text', serif;
+  font-style: italic; }
+
+.sectionTitle .separatorlineblack {
+  margin-bottom: 30px; }
+
+.separatorlineblack {
+  width: 100px;
+  height: 2px;
+  margin: 0 auto;
+  background: #000; }
 
 /* ========04. SECTION RESUME========== */
 #sectionResume {
@@ -345,46 +380,6 @@ a.scroll-down {
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 1px; }
-
-/* ========05. SECTION SERVICES========== */
-#sectionServices {
-  background: #eee;
-  padding-bottom: 50px; }
-
-.servicesCol4 {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  overflow: hidden;
-  min-height: 215px; }
-
-.servicesCol4 h3 {
-  font-size: 15px;
-  margin-top: 0px;
-  padding-top: 0;
-  text-transform: uppercase;
-  font-weight: 600;
-  text-align: left; }
-
-.servicesCol4 p {
-  font-size: 16px;
-  font-weight: 200;
-  font-family: 'Crimson Text', serif;
-  text-align: left;
-  font-style: italic;
-  color: #666;
-  padding-top: 10px; }
-
-.servicesCol4 span {
-  font-size: 40px;
-  text-align: center;
-  color: #3dc9b3; }
-
-.servicesLeft {
-  float: left; }
-
-.servicesRight {
-  padding-left: 23%;
-  padding-right: 2%; }
 
 /* ========06. SECTION PORTOFOLIO (WORKS)========== */
 #sectionProjects {

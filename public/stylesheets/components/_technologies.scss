@@ -1,0 +1,39 @@
+
+#sectionServices {
+    background: #eee;
+    padding-bottom: 50px;
+}
+
+.servicesCol4 {
+    padding-top:30px;
+    padding-bottom:30px;
+    overflow: hidden;
+    min-height: 215px;
+}
+.servicesCol4 h3 {
+    font-size: 15px;
+    margin-top: 0px;
+    padding-top: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: left;
+}
+.servicesCol4 p{
+  font-size: 14px;
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: left;
+  color: #666;
+  padding-top: 10px;
+}
+.servicesCol4 span {
+    font-size: 40px;
+    text-align: center;
+    color: #3dc9b3;
+}
+.servicesLeft {
+    float: left;
+}
+.servicesRight {
+    padding-left: 23%;
+    padding-right: 2%;
+}

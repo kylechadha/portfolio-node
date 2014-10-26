@@ -6,12 +6,17 @@
 // -----------------------------------
 @import 'global';
 @import url(http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600,600italic,700);
+// @import url(http://fonts.googleapis.com/css?family=Lato:300,400);
 
 // Components
 // -----------------------------------
 @import 'components/loader';
 @import 'components/header';
 @import 'components/about';
+@import 'components/projects';
+@import 'components/technologies';
+@import 'components/resume';
+@import 'components/contact';
 
 
 /* ========02. EVERY SECTION TITLES========== */
@@ -50,140 +55,6 @@
     margin: 0 auto;
     background: #000;
 }
-/* ========03. SECTION ABOUT========== */
-
-#sectionAbout {
-  text-align: center;
-  background-image: url(../images/kyle-in-rwanda-1920x1200.jpg);
-  /*background-size: cover;*/
-  background-repeat: no-repeat;
-  background-position: 86% 57%;
-  /*height: auto;*/
-  height: 100%;
-  width: 100%;
-  -webkit-box-shadow: inset 0px -9px 33px -5px rgba(0,0,0,0.2);
-  -moz-box-shadow: inset 0px -9px 33px -5px rgba(0,0,0,0.2);
-  box-shadow: inset 0px -9px 33px -5px rgba(0,0,0,0.2);
-}
-.aboutContainer {
-  padding: 0;
-  /*height: 100%;*/
-}
-
-
-/* ====ABOUT LEFT SIDE==== */
-
-.aboutLeft {
-  height: 100%;
-  text-align: left;
-  padding-left:0;
-  padding-top: 30%;
-}
-.intro-content {
-  text-align: center;
-}
-.intro-heading h1 {
-    color: #ffffff;
-    font-size:65px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    padding-bottom: 10px;
-    line-height: 75px;
-}
-.lineTag {
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 12px;
-  letter-spacing: 1px;
-  margin-right: 10px;
-}
-.lineTag:after {
-  content: '';
-  display: inline-block;
-  width: 4px;
-  height: 4px;
-  overflow: hidden;
-  margin-left: 10px;
-  border-radius: 100%;
-  background: #ffffff;
-  margin-bottom: 2px;
-}
-
-
-/* ====ABOUT RIGHT SIDE==== */
-
-.aboutRight {
-  background-color: rgba(237, 237, 237, 1);
-  padding: 0;
-  /*min-height: 750px;*/
-  height: 100%;
-  -webkit-box-shadow: inset 0px -9px 33px -5px rgba(0,0,0,0.1);
-  -moz-box-shadow: inset 0px -9px 33px -5px rgba(0,0,0,0.1);
-  box-shadow: inset 0px -9px 33px -5px rgba(0,0,0,0.1);
-}
-.aboutRight h2 {
-  font-size: 13px;
-  text-transform: uppercase;
-}
-/* ====ABOUT RIGHT CONTENT TOP==== */
-.aboutRightContentTop {
-  background: rgba(255, 255, 255, 1);
-  padding-top: 20%;
-  padding-right:10%;
-  padding-left: 10%;
-  padding-bottom: 25px;
-  text-align: left;
-}
-.aboutTitle h1{
-  font-size: 30px;
-  /*text-transform: uppercase;*/
-  margin-bottom: 5px;
-}
-.aboutTitle h2 {
-  margin-top: 0;
-  color: #777 !important;
-  text-transform: lowercase !important;
-}
-.aboutIntro {
-  margin-top: 30px;
-}
-.aboutIntro p {
-  font-size: 17px;
-    font-weight: 300;
-    color: #787878;
-    font-family: 'Crimson Text', serif;
-    font-style: italic;
-}
-
-/* ====ABOUT RIGHT CONTENT BOTTOM==== */
-.aboutRightContentBottom {
-  padding-right: 10%;
-  padding-left: 10%;
-  text-align: left;
-  padding-top: 25px;
-  padding-bottom: 30px;
-}
-.aboutRightContentBottom h4 {
-  margin: 5px 0;
-  padding: 0;
-  text-transform: uppercase;
-  font-size: 12px;
-  letter-spacing: 1px;
-  line-height: 20px;
-}
-h4.lastChildRCB {
-  margin-bottom: 40px;
-}
-a.scroll-down {
-  border: 2px solid #222222;
-  color: #222222;
-  background: transparent;
-  padding: 10px 20px;
-  text-transform: uppercase;
-  font-size: 13px;
-}
-
 
 
 /* ========04. SECTION RESUME========== */
@@ -267,50 +138,6 @@ a.scroll-down {
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 1px;
-}
-
-
-/* ========05. SECTION SERVICES========== */
-
-#sectionServices {
-    background: #eee;
-    padding-bottom: 50px;
-}
-
-.servicesCol4 {
-    padding-top:30px;
-    padding-bottom:30px;
-    overflow: hidden;
-    min-height: 215px;
-}
-.servicesCol4 h3 {
-    font-size: 15px;
-    margin-top: 0px;
-    padding-top: 0;
-    text-transform: uppercase;
-    font-weight: 600;
-    text-align: left;
-}
-.servicesCol4 p{
-    font-size: 16px;
-    font-weight: 200;
-    font-family: 'Crimson Text', serif;
-    text-align: left;
-    font-style: italic;
-    color: #666;
-    padding-top: 10px;
-}
-.servicesCol4 span {
-    font-size: 40px;
-    text-align: center;
-    color: #3dc9b3;
-}
-.servicesLeft {
-    float: left;
-}
-.servicesRight {
-    padding-left: 23%;
-    padding-right: 2%;
 }
 
 
