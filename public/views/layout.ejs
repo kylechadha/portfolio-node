@@ -48,12 +48,24 @@
 <script src="javascript/contactform.js"></script>
 <script src="javascript/smoothscroll.js"></script>
 <script src="javascript/classie.js"></script>
+<script src="javascript/isotope.js"></script>
 
 <script>
   $(function(){  
     "use strict";
     $('#worksGrid').mixItUp(); 
       });
+
+  // Portfolio Section: Isotope Plugin
+  var $container = $('#projects');
+  $container.isotope({
+  });
+
+  $('#filters li a').click(function(){
+    var selector = $(this).attr('data-filter');
+    $container.isotope({ filter: selector });
+    return false;
+  });
 </script>
 
 <script src="//localhost:35729/livereload.js"></script>
