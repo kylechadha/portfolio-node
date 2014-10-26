@@ -28,25 +28,25 @@ $(".nav-bar a").click(function() {
 });
 
 // Portfolio Section: FancyBox Plugin  
-$('.portfolio .fancy a').fancybox({
-  'openEffect' : 'elastic',
-  beforeLoad: function() {
-      var el, id = $(this.element).data('title-id');
+// $('.portfolio .fancy a').fancybox({
+//   'openEffect' : 'elastic',
+//   beforeLoad: function() {
+//       var el, id = $(this.element).data('title-id');
 
-      if (id) {
-          el = $('#' + id);
+//       if (id) {
+//           el = $('#' + id);
       
-          if (el.length) {
-              this.title = el.html();
-          }
-      }
-  },
-  helpers : {
-      title: {
-          type: 'inside'
-      }
-  }
-});
+//           if (el.length) {
+//               this.title = el.html();
+//           }
+//       }
+//   },
+//   helpers : {
+//       title: {
+//           type: 'inside'
+//       }
+//   }
+// });
 
 // Portfolio Section: Isotope Plugin
 var $container = $('#projects');
