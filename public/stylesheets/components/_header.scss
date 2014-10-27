@@ -1,22 +1,26 @@
-/* ========01. HEADERBAR, NAVIGATION========== */
+///
+/// HEADER SCSS FILE 
+/// ----------------------------------
+
 #headerBar {
   z-index: 999;
-    width: 100%;
-    height: auto;
-    min-height: 80px;
-    -webkit-transition: 0.2s cubic-bezier(.58,.83,.57,.84); 
-    -moz-transition: 0.2s cubic-bezier(.58,.83,.57,.84); 
-    transition: 0.2s cubic-bezier(.58,.83,.57,.84); 
-    position: fixed;
-    top: 0px;
-    background: #fff;
+  width: 100%;
+  height: auto;
+  min-height: 80px;
+  -webkit-transition: 0.2s cubic-bezier(.58,.83,.57,.84); 
+  -moz-transition: 0.2s cubic-bezier(.58,.83,.57,.84); 
+  transition: 0.2s cubic-bezier(.58,.83,.57,.84); 
+  position: fixed;
+  top: 0px;
+  background: #fff;
   -webkit-box-shadow: 0px 7px 16px 0px rgba(50, 50, 50, 0.1);
-    -moz-box-shadow:    0px 7px 16px 0px rgba(50, 50, 50, 0.1);
+  -moz-box-shadow:    0px 7px 16px 0px rgba(50, 50, 50, 0.1);
   box-shadow:         0px 7px 16px 0px rgba(50, 50, 50, 0.1);
+  .container {
+    padding: 0;
+  }
 }
-#headerBar .container {
-  padding: 0;
-}
+
 .headerLeft {
   text-align: left;
   font-size: 36px;
@@ -24,30 +28,43 @@
   line-height: 80px;
   padding: 0;
 }
+
 .headerRight {
   text-align: left;
   padding: 0;
 }
-.navbar-collapse {padding-left: 0px;}
-.navbar {margin-bottom: 0;-webkit-padding-start: 0px;}
-.navbar li{display: inline-block;margin: 0 10px;}
-.navbar li a{
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 80px;
-    letter-spacing: 2px;
-    text-decoration: none;
-    z-index: 999;
-    padding: 4px 0;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    transition: 0.3s;
-    text-transform: uppercase;
+
+.navbar-collapse {
+  padding-left: 0px;
 }
-.navbar li.active a {
-  border-bottom: 1px solid #3dc9b3;
-  color: #3dc9b3;
+
+.navbar {
+  margin-bottom: 0;
+  -webkit-padding-start: 0px;
+  li {
+    display: inline-block;margin: 0 10px;
+    a {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 80px;
+      letter-spacing: 2px;
+      text-decoration: none;
+      z-index: 999;
+      padding: 4px 0;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      transition: 0.3s;
+      text-transform: uppercase;
+    }
+    &.active {
+      a {
+        border-bottom: 1px solid #3dc9b3;
+        color: #3dc9b3;
+      }
+    }
+  }
 }
+
 .navbar-toggle {
   font-size: 30px;
   cursor: pointer;

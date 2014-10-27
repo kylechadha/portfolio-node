@@ -156,7 +156,6 @@ input.submit:hover {
   top: 50%;
   width: 60px; }
 
-/* ========01. HEADERBAR, NAVIGATION========== */
 #headerBar {
   z-index: 999;
   width: 100%;
@@ -171,9 +170,8 @@ input.submit:hover {
   -webkit-box-shadow: 0px 7px 16px 0px rgba(50, 50, 50, 0.1);
   -moz-box-shadow: 0px 7px 16px 0px rgba(50, 50, 50, 0.1);
   box-shadow: 0px 7px 16px 0px rgba(50, 50, 50, 0.1); }
-
-#headerBar .container {
-  padding: 0; }
+  #headerBar .container {
+    padding: 0; }
 
 .headerLeft {
   text-align: left;
@@ -192,27 +190,24 @@ input.submit:hover {
 .navbar {
   margin-bottom: 0;
   -webkit-padding-start: 0px; }
-
-.navbar li {
-  display: inline-block;
-  margin: 0 10px; }
-
-.navbar li a {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 80px;
-  letter-spacing: 2px;
-  text-decoration: none;
-  z-index: 999;
-  padding: 4px 0;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  transition: 0.3s;
-  text-transform: uppercase; }
-
-.navbar li.active a {
-  border-bottom: 1px solid #3dc9b3;
-  color: #3dc9b3; }
+  .navbar li {
+    display: inline-block;
+    margin: 0 10px; }
+    .navbar li a {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 80px;
+      letter-spacing: 2px;
+      text-decoration: none;
+      z-index: 999;
+      padding: 4px 0;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      transition: 0.3s;
+      text-transform: uppercase; }
+    .navbar li.active a {
+      border-bottom: 1px solid #3dc9b3;
+      color: #3dc9b3; }
 
 .navbar-toggle {
   font-size: 30px;
@@ -445,7 +440,7 @@ a.scroll-down {
 .portfolio-title {
   display: none; }
 
-#sectionServices {
+#sectionTechnologies {
   background: #eee;
   padding-bottom: 50px; }
 
