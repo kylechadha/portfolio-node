@@ -21,6 +21,14 @@ a:hover {
   color: #3dc9b3;
   text-decoration: none; }
 
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
 .sectionTitle {
   text-align: center;
   padding-top: 75px;
@@ -139,15 +147,10 @@ input.submit:hover {
 
 .loader {
   background: #fff;
-  height: 100%;
   position: fixed;
-  z-index: 9999;
+  height: 100%;
   width: 100%;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  display: -moz-box;
+  z-index: 9999;
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: center;
@@ -170,8 +173,8 @@ input.submit:hover {
       -webkit-animation-delay: -0.8s;
       animation-delay: -0.8s; }
   .loader .spinner > div {
-    background-color: #666;
-    height: 30px;
+    background-color: skyblue;
+    height: 45px;
     width: 6px;
     display: inline-block;
     -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
@@ -250,42 +253,25 @@ input.submit:hover {
   font-size: 30px;
   cursor: pointer; }
 
-/* ========03. SECTION ABOUT========== */
 #sectionAbout {
+  width: 100%;
+  height: 100%;
   text-align: center;
   background-image: url(../images/kyle-in-rwanda-1920x1200.jpg);
-  /*background-size: cover;*/
   background-repeat: no-repeat;
   background-position: 86% 57%;
-  /*height: auto;*/
-  height: 100%;
-  width: 100%;
   -webkit-box-shadow: inset 0px -9px 33px -5px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: inset 0px -9px 33px -5px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0px -9px 33px -5px rgba(0, 0, 0, 0.2); }
 
-.aboutContainer {
-  padding: 0;
-  /*height: 100%;*/ }
-
-/* ====ABOUT LEFT SIDE==== */
 .aboutLeft {
   height: 100%;
   text-align: left;
   padding-left: 0;
-  padding-top: 30%; }
+  padding-top: 10%; }
 
 .intro-content {
   text-align: center; }
-
-.intro-heading h1 {
-  color: #ffffff;
-  font-size: 65px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  padding-bottom: 10px;
-  line-height: 75px; }
 
 .lineTag {
   color: #fff;
@@ -294,7 +280,18 @@ input.submit:hover {
   letter-spacing: 1px;
   margin-right: 10px; }
 
-.lineTag:after {
+.lineTag:before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  overflow: hidden;
+  margin-right: 10px;
+  border-radius: 100%;
+  background: #ffffff;
+  margin-bottom: 2px; }
+
+.lineTag:last-of-type:after {
   content: '';
   display: inline-block;
   width: 4px;
@@ -305,11 +302,9 @@ input.submit:hover {
   background: #ffffff;
   margin-bottom: 2px; }
 
-/* ====ABOUT RIGHT SIDE==== */
 .aboutRight {
   background-color: #ededed;
   padding: 0;
-  /*min-height: 750px;*/
   height: 100%;
   -webkit-box-shadow: inset 0px -9px 33px -5px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: inset 0px -9px 33px -5px rgba(0, 0, 0, 0.1);
@@ -319,7 +314,6 @@ input.submit:hover {
   font-size: 14px;
   text-transform: uppercase; }
 
-/* ====ABOUT RIGHT CONTENT TOP==== */
 .aboutRightContentTop {
   background: white;
   padding-top: 20%;
@@ -330,7 +324,6 @@ input.submit:hover {
 
 .aboutTitle h1 {
   font-size: 30px;
-  /*text-transform: uppercase;*/
   margin-bottom: 5px; }
 
 .aboutTitle h2 {
@@ -346,35 +339,26 @@ input.submit:hover {
   font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #787878; }
 
-/* ====ABOUT RIGHT CONTENT BOTTOM==== */
 .aboutRightContentBottom {
-  padding-right: 10%;
-  padding-left: 10%;
-  text-align: left;
-  padding-top: 25px;
-  padding-bottom: 30px; }
+  padding: 25px 10% 20px;
+  text-align: left; }
+  .aboutRightContentBottom h4 {
+    margin: 5px 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 20px; }
+    .aboutRightContentBottom h4:last-of-type {
+      margin-bottom: 20px; }
 
-.aboutRightContentBottom h4 {
-  margin: 5px 0;
-  padding: 0;
-  text-transform: uppercase;
-  font-size: 12px;
-  letter-spacing: 1px;
-  line-height: 20px; }
-
-h4.lastChildRCB {
-  margin-bottom: 40px; }
-
-a.scroll-down {
-  border: 2px solid #222;
-  color: #222;
-  background: transparent;
-  padding: 10px 20px;
-  text-transform: uppercase;
-  font-size: 13px; }
-  a.scroll-down:hover {
-    color: #666;
-    border: 2px solid #666; }
+.aboutRightContentShare {
+  font-size: 35px;
+  text-align: right; }
+  .aboutRightContentShare a {
+    color: skyblue; }
+    .aboutRightContentShare a:hover {
+      color: #222; }
 
 /* ========06. SECTION PORTOFOLIO (WORKS)========== */
 #sectionProjects {

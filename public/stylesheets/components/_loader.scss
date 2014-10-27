@@ -1,14 +1,13 @@
+///
+/// LOADING SCREEN SCSS FILE 
+/// ----------------------------------
+
 .loader {
   background: #fff;
-  height: 100%;
   position: fixed;
-  z-index: 9999;
+  height: 100%;
   width: 100%;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  display: -moz-box;
+  z-index: 9999;
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: center;
@@ -42,8 +41,8 @@
   }
 
   .spinner > div {
-    background-color: #666;
-    height: 30px;
+    background-color: skyblue;
+    height: 45px;
     width: 6px;
     display: inline-block;
     
@@ -62,7 +61,8 @@
   0%, 40%, 100% { 
     transform: scaleY(0.4);
     -webkit-transform: scaleY(0.4);
-  }  20% { 
+  }
+  20% { 
     transform: scaleY(1.0);
     -webkit-transform: scaleY(1.0);
   }
