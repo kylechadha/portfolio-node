@@ -138,23 +138,60 @@ input.submit:hover {
  }
 
 .loader {
-  background: #ffffff;
-  bottom: 0;
+  background: #fff;
   height: 100%;
-  left: 0;
   position: fixed;
+  z-index: 9999;
+  width: 100%;
+  bottom: 0;
+  left: 0;
   right: 0;
   top: 0;
-  width: 100%;
-  z-index: 9999; }
+  display: -moz-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center; }
+  .loader .spinner {
+    width: 50px;
+    font-size: 10px; }
+    .loader .spinner .rect2 {
+      -webkit-animation-delay: -1.1s;
+      animation-delay: -1.1s; }
+    .loader .spinner .rect3 {
+      -webkit-animation-delay: -1s;
+      animation-delay: -1s; }
+    .loader .spinner .rect4 {
+      -webkit-animation-delay: -0.9s;
+      animation-delay: -0.9s; }
+    .loader .spinner .rect5 {
+      -webkit-animation-delay: -0.8s;
+      animation-delay: -0.8s; }
+  .loader .spinner > div {
+    background-color: #666;
+    height: 30px;
+    width: 6px;
+    display: inline-block;
+    -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+    animation: stretchdelay 1.2s infinite ease-in-out; }
 
-.loaderInner {
-  background: #ffffff url(../images/load.gif) center center no-repeat;
-  height: 60px;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  width: 60px; }
+@-webkit-keyframes stretchdelay {
+  0%, 40%, 100% {
+    -webkit-transform: scaleY(0.4); }
+
+  20% {
+    -webkit-transform: scaleY(1); } }
+
+@keyframes stretchdelay {
+  0%, 40%, 100% {
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4); }
+
+  20% {
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1); } }
 
 #headerBar {
   z-index: 999;
