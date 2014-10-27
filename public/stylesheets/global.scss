@@ -32,10 +32,142 @@ a:hover {
     text-decoration:none;
 }
 
-// Global Classes
+
+// Section Styles
 // -----------------------------------
-// ** Update so that you use flexbox mixin / helper
-.flex {
-  display: flex;
-  justify-content: center;
+.sectionTitle {
+  text-align: center;
+  padding-top: 75px;
+  padding-bottom: 25px;
+}
+.sectionTitle h1 {
+    letter-spacing: 1px;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.sectionTitle h4 {
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+.sectionTitle p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+    color: #787878;
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.sectionTitle .separatorlineblack {
+    margin-bottom: 30px;
+}
+.separatorlineblack {
+    width: 100px;
+    height: 2px;
+    margin: 0 auto;
+    background: #000;
+}
+
+
+/* ====GENERAL FORM STYLES==== */
+
+input, textarea, select {
+    color: #222;
+  background: transparent;
+  vertical-align: top;
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  margin: 0;
+  padding: 15px;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border: 1px solid #ccc;
+    font-size: 13px;
+    font-weight: 600;
+}
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  position: relative;
+  z-index: 5;
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  border: 1px solid #222;
+}
+input.error, textarea.error, select.error {
+  border: 1px solid #3dc9b3;
+}
+input.submit {
+  width: auto;
+  cursor: pointer;
+  position: relative;
+    background: transparent;
+    border: 2px solid #222;
+    color: #222;
+    padding: 16px;
+    margin: 20px 0;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+    font-weight: 600;
+}
+input.submit:hover {
+    color: #ffffff;
+    background: #222;
+}
+
+/* ====MESSAGE FOR SUCCESS==== */
+
+#message { 
+  margin: 1em 0; 
+  padding: 0; 
+  display: block; 
+  background: transparent none; 
+}
+#message h1 {
+    letter-spacing: 1px;
+  font-size: 20px;
+    font-weight: 400;
+  text-transform: uppercase;
+}
+
+#message p {
+    font-size: 16px;
+    font-weight: 200;
+    font-family: 'Crimson Text', serif;
+    text-align: left;
+    font-style: italic;
+}
+
+/* ========08. MEDIA QUERIES FOR RESPONSIVE DESIGN========== */
+@media screen and (max-width: 768px) {
+
+.intro-heading h1 {
+    font-size:45px;
+    line-height: 45px;
+}
+.navbar li {
+  display: block;
+}
+.navbar li a {
+  line-height: 40px;
+}
+
+}
+
+@media screen and (max-width: 480px) {
+
+.resumeStats .col-md-2 {
+    padding: 20px;
+}
+
+
 }
