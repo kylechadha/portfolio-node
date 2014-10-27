@@ -10,21 +10,20 @@
   <title>Kyle Chadha || Full Stack Developer</title>
 
   <!-- Vendor CSS: Bootstrap, Font Awesome, Elegant Icons -->
-  <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="stylesheets/dependencies/bootstrap.css">
   <link rel="stylesheet" href="icons/elegant-icons.css">
   <link rel="stylesheet" href="fonts/fonts.css">
 
   <!-- Compiled SCSS > CSS File -->
-  <link rel="stylesheet" href="stylesheets/compiled-master.css">
+  <link rel="stylesheet" href="stylesheets/compiled.css">
 
 </head>
+
 
 <body data-spy="scroll" data-target=".navigation">
   
   <% include components/_loader.ejs %>
-
   <% include components/_header.ejs %>
   <% include components/_about.ejs %>
   <% include components/_projects.ejs %>
@@ -32,32 +31,21 @@
   <% include components/_resume.ejs %>
   <% include components/_contact.ejs %>
 
+  <!-- Dependencies -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="javascript/bootstrap.js"></script>
 
-<!-- Dependencies -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-<!-- Javascript Files -->
-
-<!--Main Bootstrap JS-->
-<script src="javascript/bootstrap.js"></script>
-<script src="javascript/jquery.easing.js"></script>
-<script src="javascript/jquery.mixitup.js"></script>
-<script src="javascript/scripts.js"></script>
-<script src="javascript/jquery.magnific-popup.js"></script>
-<script src="javascript/contactform.js"></script>
-<script src="javascript/smoothscroll.js"></script>
-<script src="javascript/classie.js"></script>
-<script src="javascript/isotope.js"></script>
-<script src="javascript/master.js"></script>
-
-<script>
-  $(function(){  
-    "use strict";
-    $('#worksGrid').mixItUp(); 
-      });
-</script>
-
-<script src="//localhost:35729/livereload.js"></script>
+  <!-- jQuery Plugins -->
+  <script src="javascript/jquery.easing.js"></script>
+  <script src="javascript/jquery.mixitup.js"></script>
+  <script src="javascript/scripts.js"></script>
+  <script src="javascript/jquery.magnific-popup.js"></script>
+  <script src="javascript/contactform.js"></script>
+  <script src="javascript/smoothscroll.js"></script>
+  <script src="javascript/classie.js"></script>
+  <script src="javascript/isotope.js"></script>
+  <script src="javascript/master.js"></script>
+  <script src="//localhost:35729/livereload.js"></script>
 
 </body>
 
