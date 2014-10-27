@@ -48,9 +48,8 @@ $(".nav-bar a").click(function() {
 // });
 
 // Portfolio Section: Isotope Plugin
-var $container = $('#projects');
-$container.isotope({
-});
+var $container = $('.projects');
+$container.isotope();
 
 $('#filters li a').click(function(){
   var selector = $(this).attr('data-filter');

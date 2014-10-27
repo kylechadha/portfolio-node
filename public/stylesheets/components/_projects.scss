@@ -1,123 +1,146 @@
-/* ========06. SECTION PORTOFOLIO (WORKS)========== */
 #sectionProjects {
   padding-bottom: 100px;
+
+  .projects {
+    display: -webkit-flex;
+    display: flex;
+    // Add webkit prefixes to all of these and make sure they all get fixed in safari!
+    flex-wrap: wrap;
+
+    article {
+      height: 212px;
+      width: 260px;
+      margin: 12px;
+      background-color: rgb(237, 237, 237);
+      border: 5px solid rgb(237, 237, 237);
+      &:first-of-type {
+        padding: 10px;
+      }
+      h4 {
+        text-transform: uppercase;
+      }
+      img {
+        max-width:100%;
+        max-height:100%;
+      }
+    }
+  }
 }
 
+// .portfolio {
+//   text-align: center;
+//   padding-top: 95px;
+//   overflow: hidden;
+//   /*margin-top: -95px;*/
+// }
 
-.portfolio {
-  text-align: center;
-  padding-top: 95px;
-  overflow: hidden;
-  /*margin-top: -95px;*/
-}
+// .portfolio p {
+//   padding: 0 60px 30px 60px;
+// }
 
-.portfolio p {
-  padding: 0 60px 30px 60px;
-}
+// .portfolio .nav-bar {
+//   width: 286px;
+//   padding: 0 40px;
+//   text-align: left;
+//   background: #252e30;
+//   /*border: 5px solid #252e30;*/
+//   /*margin: -5px 36px 35px -5px;*/
+//   /*margin: 0 41px 40px 0;*/
+// }
 
-.portfolio .nav-bar {
-  width: 286px;
-  padding: 0 40px;
-  text-align: left;
-  background: #252e30;
-  /*border: 5px solid #252e30;*/
-  /*margin: -5px 36px 35px -5px;*/
-  /*margin: 0 41px 40px 0;*/
-}
+// .portfolio .nav-bar a {
+//   color: #919191;
+//   font-size: 18px;
+//   line-height: 30px;
+//   border: none;
+//   margin: 0 0 -3px 0;
+// }
 
-.portfolio .nav-bar a {
-  color: #919191;
-  font-size: 18px;
-  line-height: 30px;
-  border: none;
-  margin: 0 0 -3px 0;
-}
+// .portfolio .nav-bar a:hover:after,
+// .portfolio .nav-bar a:hover:before {
+//   display: none;
+// }
 
-.portfolio .nav-bar a:hover:after,
-.portfolio .nav-bar a:hover:before {
-  display: none;
-}
+// .portfolio .nav-bar .current a,
+// .portfolio .nav-bar a:hover {
+//   color: #fff;
+//   text-decoration: none;
+// }
 
-.portfolio .nav-bar .current a,
-.portfolio .nav-bar a:hover {
-  color: #fff;
-  text-decoration: none;
-}
+// .portfolio .nav-bar h4 {
+//   color: #fff;
+//   font-size: 18px;
+//   line-height: 24px;
+//   text-transform: uppercase;
+//   font-weight: bold;
+//   padding: 35px 0 16px 0;
+// }
 
-.portfolio .nav-bar h4 {
-  color: #fff;
-  font-size: 18px;
-  line-height: 24px;
-  text-transform: uppercase;
-  font-weight: bold;
-  padding: 35px 0 16px 0;
-}
+// .portfolio section {
+//   overflow: hidden;
+//   clear: both;
+//   margin: 20px -50px 60px 0;
+// }
 
-.portfolio section {
-  overflow: hidden;
-  clear: both;
-  margin: 20px -50px 60px 0;
-}
-
-.portfolio article {
-  float: left;
-  margin: 0 41px 40px 0;
-}
+// .portfolio article {
+//   float: left;
+//   margin: 0 41px 40px 0;
+// }
 
 
-.portfolio article a {
-  position: relative;
-  display: block;
-}
+// .portfolio article a {
+//   position: relative;
+//   display: block;
+// }
 
-.portfolio a {
-  border: 5px solid #252e30;
-}
+// .portfolio a {
+//   border: 5px solid #252e30;
+// }
 
-.portfolio a:before {
-  background: #2ecc71;
-  position: absolute;
-  content: "";
-  left: 0;
-  right: 0;
-  bottom: 0;
-  -webkit-transition: all .2s ease;
-  -moz-transition: all .2s ease;
-  transition: all .2s ease;
-  top: 0;
-  opacity: 0;
-  filter: alpha(opacity=0);
-}
+// .portfolio a:before {
+//   background: #2ecc71;
+//   position: absolute;
+//   content: "";
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   -webkit-transition: all .2s ease;
+//   -moz-transition: all .2s ease;
+//   transition: all .2s ease;
+//   top: 0;
+//   opacity: 0;
+//   filter: alpha(opacity=0);
+// }
 
-.portfolio a:after {
-  background: url(../images/ico_search.png) no-repeat 49% 51%;
-  position: absolute;
-  content: "";
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  opacity: 0;
-  -webkit-transition: all .2s ease;
-  -moz-transition: all .2s ease;
-  transition: all .2s ease;
-}
+// .portfolio a:after {
+//   background: url(../images/ico_search.png) no-repeat 49% 51%;
+//   position: absolute;
+//   content: "";
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   top: 0;
+//   opacity: 0;
+//   -webkit-transition: all .2s ease;
+//   -moz-transition: all .2s ease;
+//   transition: all .2s ease;
+// }
 
-.portfolio li a:before,
-.portfolio li a:after {
-  display: none;
-}
+// .portfolio li a:before,
+// .portfolio li a:after {
+//   display: none;
+// }
 
-.portfolio a:hover:before {
-  opacity: 0.75;
-  filter: alpha(opacity=75);
-}
+// .portfolio a:hover:before {
+//   opacity: 0.75;
+//   filter: alpha(opacity=75);
+// }
 
-.portfolio a:hover:after {
-  opacity: 1;
-  filter: alpha(opacity=100);
-}
+// .portfolio a:hover:after {
+//   opacity: 1;
+//   filter: alpha(opacity=100);
+// }
 
-.portfolio-title {
-  display: none;
-}
+// .portfolio-title {
+//   display: none;
+// }
