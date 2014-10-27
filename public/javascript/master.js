@@ -2,10 +2,6 @@ $(window).load(function() {
   $(".loader").delay(400).fadeOut("slow"); 
 });
 
-//------- ACTIVE LINKS SCROLLSPY ---//
-
-$('body').scrollspy({ offset: 200, target: '.navigation' });
-
 // Portfolio Section: General Configuration
 function equalHeight(group) {
   var tallest = 0;
