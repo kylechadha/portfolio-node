@@ -14,22 +14,22 @@ body {
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
-  color: #222222;
+  color: #222;
   -webkit-font-smoothing: antialiased;
   background: #ffffff;
   position: relative;
 }
 
 a {
-    color: #222222;
-    -webkit-transition: 0.2s;
-    -moz-transition: 0.2s;
-    transition: 0.2s;
+  color: #222;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  transition: 0.2s;
 }
 
 a:hover {
-    color: #3dc9b3;
-    text-decoration:none;
+  color: #3dc9b3;
+  text-decoration:none;
 }
 
 
@@ -39,42 +39,45 @@ a:hover {
   text-align: center;
   padding-top: 75px;
   padding-bottom: 25px;
-}
-.sectionTitle h1 {
+  h1 {
     letter-spacing: 1px;
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
-}
-.sectionTitle h4 {
+  }
+  h4 {
     letter-spacing: 1px;
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
     padding-bottom: 5px;
-}
-.sectionTitle p {
-    font-size: 16px;
+  }
+  p {
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 300;
+    font-size: 16px;
     line-height: 25px;
     color: #787878;
-    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-.sectionTitle .separatorlineblack {
+  }
+  .separatorlineblack {
     margin-bottom: 30px;
+  }
 }
+
 .separatorlineblack {
-    width: 100px;
-    height: 2px;
-    margin: 0 auto;
-    background: #000;
+  width: 100px;
+  height: 2px;
+  margin: 0 auto;
+  background: #000;
 }
 
 
-/* ====GENERAL FORM STYLES==== */
-
-input, textarea, select {
-    color: #222;
+// Form Styles
+// -----------------------------------
+input,
+textarea,
+select {
+  color: #222;
   background: transparent;
   vertical-align: top;
   transition: all 0.25s ease-in-out;
@@ -86,10 +89,13 @@ input, textarea, select {
   height: 100%;
   border: 0;
   border: 1px solid #ccc;
-    font-size: 13px;
-    font-weight: 600;
+  font-size: 13px;
+  font-weight: 600;
 }
-input:focus, textarea:focus, select:focus {
+
+input:focus,
+textarea:focus,
+select:focus {
   outline: none;
   position: relative;
   z-index: 5;
@@ -98,33 +104,36 @@ input:focus, textarea:focus, select:focus {
   -moz-transition: all 0.25s ease-in-out;
   border: 1px solid #222;
 }
-input.error, textarea.error, select.error {
+
+input.error,
+textarea.error,
+select.error {
   border: 1px solid #3dc9b3;
 }
+
 input.submit {
   width: auto;
   cursor: pointer;
   position: relative;
-    background: transparent;
-    border: 2px solid #222;
-    color: #222;
-    padding: 16px;
-    margin: 20px 0;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
+  background: transparent;
+  border: 2px solid #222;
+  color: #222;
+  padding: 16px;
+  margin: 20px 0;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 15px;
-    font-weight: 600;
-}
-input.submit:hover {
-    color: #ffffff;
-    background: #222;
+  font-weight: 600;
 }
 
-/* ====MESSAGE FOR SUCCESS==== */
+input.submit:hover {
+  color: #ffffff;
+  background: #222;
+}
 
 #message { 
   margin: 1em 0; 
@@ -132,42 +141,40 @@ input.submit:hover {
   display: block; 
   background: transparent none; 
 }
+
 #message h1 {
-    letter-spacing: 1px;
+  letter-spacing: 1px;
   font-size: 20px;
-    font-weight: 400;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
 #message p {
-    font-size: 16px;
-    font-weight: 200;
-    font-family: 'Crimson Text', serif;
-    text-align: left;
-    font-style: italic;
+  font-size: 16px;
+  font-weight: 200;
+  font-family: 'Crimson Text', serif;
+  text-align: left;
+  font-style: italic;
 }
 
-/* ========08. MEDIA QUERIES FOR RESPONSIVE DESIGN========== */
-@media screen and (max-width: 768px) {
 
-.intro-heading h1 {
+// Media Queries
+// -----------------------------------
+@media screen and (max-width: 768px) {
+  .intro-heading h1 {
     font-size:45px;
     line-height: 45px;
-}
-.navbar li {
-  display: block;
-}
-.navbar li a {
-  line-height: 40px;
-}
-
+  }
+  .navbar li {
+    display: block;
+  }
+  .navbar li a {
+    line-height: 40px;
+  }
 }
 
 @media screen and (max-width: 480px) {
-
-.resumeStats .col-md-2 {
+  .resumeStats .col-md-2 {
     padding: 20px;
-}
-
-
+  }
 }

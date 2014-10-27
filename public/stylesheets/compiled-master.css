@@ -6,13 +6,13 @@ html, body {
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
-  color: #222222;
+  color: #222;
   -webkit-font-smoothing: antialiased;
   background: #ffffff;
   position: relative; }
 
 a {
-  color: #222222;
+  color: #222;
   -webkit-transition: 0.2s;
   -moz-transition: 0.2s;
   transition: 0.2s; }
@@ -25,29 +25,25 @@ a:hover {
   text-align: center;
   padding-top: 75px;
   padding-bottom: 25px; }
-
-.sectionTitle h1 {
-  letter-spacing: 1px;
-  font-size: 24px;
-  font-weight: 600;
-  text-transform: uppercase; }
-
-.sectionTitle h4 {
-  letter-spacing: 1px;
-  font-size: 14px;
-  font-weight: 400;
-  text-transform: uppercase;
-  padding-bottom: 5px; }
-
-.sectionTitle p {
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 25px;
-  color: #787878;
-  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
-
-.sectionTitle .separatorlineblack {
-  margin-bottom: 30px; }
+  .sectionTitle h1 {
+    letter-spacing: 1px;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase; }
+  .sectionTitle h4 {
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-bottom: 5px; }
+  .sectionTitle p {
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 25px;
+    color: #787878; }
+  .sectionTitle .separatorlineblack {
+    margin-bottom: 30px; }
 
 .separatorlineblack {
   width: 100px;
@@ -55,7 +51,6 @@ a:hover {
   margin: 0 auto;
   background: #000; }
 
-/* ====GENERAL FORM STYLES==== */
 input, textarea, select {
   color: #222;
   background: transparent;
@@ -106,7 +101,6 @@ input.submit:hover {
   color: #ffffff;
   background: #222; }
 
-/* ====MESSAGE FOR SUCCESS==== */
 #message {
   margin: 1em 0;
   padding: 0;
@@ -126,7 +120,6 @@ input.submit:hover {
   text-align: left;
   font-style: italic; }
 
-/* ========08. MEDIA QUERIES FOR RESPONSIVE DESIGN========== */
 @media screen and (max-width: 768px) {
   .intro-heading h1 {
     font-size: 45px;
