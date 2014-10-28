@@ -1,25 +1,9 @@
+// Loading Screen
 $(window).load(function() { 
   $(".loader").delay(400).fadeOut("slow"); 
 });
 
-// Portfolio Section: General Configuration
-// function equalHeight(group) {
-//   var tallest = 0;
-//   group.each(function() {
-//     var thisHeight = $(this).height();
-//     if(thisHeight > tallest) {
-//       tallest = thisHeight;
-//     }
-//   });
-//   group.height(tallest);
-// }
-// equalHeight($(".portfolio article"));
-
-// $(".menu-trigger").click(function() {
-//   $("#menu").fadeToggle(300);
-//   $(this).toggleClass("active")
-// });
-
+// Portfolio Section: Highlight current filter.
 $(".nav-bar a").click(function() {
   $(".projects .nav-bar li").removeClass("current")
   $(this).parent().addClass("current")
