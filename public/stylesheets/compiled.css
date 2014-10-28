@@ -8,7 +8,7 @@ body {
   font-size: 14px;
   color: #222;
   -webkit-font-smoothing: antialiased;
-  background: #ffffff;
+  background: #fff;
   position: relative; }
 
 a {
@@ -106,7 +106,7 @@ input.submit {
   font-weight: 600; }
 
 input.submit:hover {
-  color: #ffffff;
+  color: #fff;
   background: #222; }
 
 #message {
@@ -380,81 +380,49 @@ input.submit:hover {
       padding-left: 23%;
       padding-right: 2%; }
 
-/* ========04. SECTION RESUME========== */
 #sectionResume {
-  background: #ffffff;
+  background: #fff;
   min-height: 600px; }
-
-#sectionResume h2 {
-  font-size: 17px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 600;
-  margin-bottom: 30px; }
-
-.resumeLeft span, .resumeRight span {
-  font-size: 30px; }
-
-.resumeLeft {
-  text-align: right;
-  border-right: 1px solid #eee; }
-
-.resumeRight {
-  text-align: left; }
-
-.resumeList {
-  -webkit-padding-start: 0px;
-  -moz-padding-start: 0px;
-  padding: 0 10px; }
-
-.resumeList li {
-  list-style: none;
-  margin-top: 40px;
-  margin-bottom: 60px; }
-
-.resumeList li h4 {
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 1px; }
-
-.resumeName {
-  color: #666;
-  font-size: 12px; }
-
-.resumeList p {
-  font-size: 15px;
-  color: #787878;
-  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
-
-.resumePeriod {
-  background: #222222;
-  color: #fff;
-  padding: 2px 4px;
-  font-size: 12px;
-  font-style: italic; }
-
-.resumeStats {
-  margin-top: 25px;
-  text-align: center; }
-
-.resumeStats span {
-  font-size: 30px; }
-
-.resumeStats .col-md-2 {
-  padding: 50px;
-  border-left: 1px solid #eee;
-  border-top: 1px solid #eee; }
-
-.statsIconPerc {
-  font-size: 50px;
-  font-weight: 500;
-  letter-spacing: 1px; }
-
-.statsName {
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 1px; }
+  #sectionResume h2 {
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 30px; }
+  #sectionResume .resumeLeft {
+    text-align: right;
+    border-right: 1px solid #eee; }
+    #sectionResume .resumeLeft span {
+      font-size: 30px; }
+  #sectionResume .resumeRight {
+    text-align: left; }
+    #sectionResume .resumeRight span {
+      font-size: 30px; }
+  #sectionResume .resumeList {
+    -webkit-padding-start: 0px;
+    -moz-padding-start: 0px;
+    padding: 0 10px; }
+    #sectionResume .resumeList li {
+      list-style: none;
+      margin-top: 40px;
+      margin-bottom: 60px; }
+      #sectionResume .resumeList li h4 {
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 1px; }
+      #sectionResume .resumeList li p {
+        font-size: 15px;
+        color: #787878;
+        font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+      #sectionResume .resumeList li .resumeName {
+        color: #666;
+        font-size: 12px; }
+      #sectionResume .resumeList li .resumePeriod {
+        background: #222;
+        color: #fff;
+        padding: 2px 4px;
+        font-size: 12px;
+        font-style: italic; }
 
 #sectionContact {
   background: #eee; }
