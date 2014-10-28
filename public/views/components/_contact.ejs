@@ -1,94 +1,63 @@
-
-<!--section CONTACT -->
 <section id="sectionContact">
+  
+  <div class="container">
+    <div class="sectionTitle">
+      <h1>Contact</h1>
+      <h4>Get in touch</h4>
+      <div class="separatorlineblack"></div>
+      <p>Shoot me an e-mail, leave me a message, or hey -- even use that fancy mailer.</p>
+    </div>
 
-<div class="container">
+    <div class="contactForm">
+      <mark id="message"></mark>
 
-  <!-- section TITLE -->
+      <form method="post" action="contact.php" name="contactform" id="contactform" autocomplete="on">
 
-  <div class="sectionTitle">
+        <fieldset>
+          <div>
+            <label class="contactLabel">Name *</label>
+            <input name="name" type="text" id="name" required="required" />
+          </div>
 
-        <h1>Contact</h1>
-        <h4>Get in touch</h4>
-        <div class="separatorlineblack"></div>
+          <div>
+            <label class="contactLabel">E-mail *</label>
+            <input name="email" type="email" id="email" pattern="^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$" required="required" />
+          </div>
 
-        <p>Shoot me an e-mail, leave me a message, or hey -- even use that fancy mailer.</p>
+          <div>
+            <label class="contactLabel">Subject *</label>
+            <input name="subject" type="text" id="subject" required="required">
+          </div>
+        </fieldset>
 
+        <fieldset>
+          <div>
+            <label class="contactLabel">Your message *</label>
+            <textarea name="comments" cols="40" rows="3" id="comments" spellcheck="true" required="required"></textarea>
+          </div>
+        </fieldset>
+
+        <input type="submit" class="submit" id="submit" value="Send message" />
+
+      </form>
+    </div>
   </div>
-  <!-- END section TITLE -->
 
-  <!-- contact FORM-->
-  <div class="contactForm">
-
-  <!--MESSAGE SENT SUCCESFULLY-->
-  <mark id="message"></mark>
-
-
-  <!--Main form-->
-  <form method="post" action="contact.php" name="contactform" id="contactform" autocomplete="on">
-    <fieldset>
-
-      <div>
-        <label class="contactLabel">Name *</label>
-        <input name="name" type="text" id="name" required="required" />
-      </div>
-
-      <div>
-        <label class="contactLabel">E-mail *</label>
-        <input name="email" type="email" id="email" pattern="^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$" required="required" />
-      </div>
-
-      <div>
-        <label class="contactLabel">Subject *</label>
-        <input name="subject" type="text" id="subject" required="required">
-      </div>
-
-    </fieldset>
-
-    <fieldset>
-
-      <div>
-        <label class="contactLabel">Your message *</label>
-        <textarea name="comments" cols="40" rows="3" id="comments" spellcheck="true" required="required"></textarea>
-      </div>
-
-    </fieldset>
-
-    <input type="submit" class="submit" id="submit" value="Send message" />
-
-  </form>
-  <!--END Main form-->
-
-  </div>
-  <!-- END contact FORM-->
-
-  </div>
-  <!-- END container -->
-
-
-  <!-- footer CONTACT-->
   <footer class="contactFooter">
-
     <div class="container">
 
-      <!-- COPYRIGHT-->
       <div class="col-md-6 col-sm-6 col-xs-12 footerLeft">
         Thanks for stopping by =]
       </div>
 
-      <!-- SOCIAL ICONS -->
       <div class="col-md-6 col-sm-6 col-xs-12 footerRight">
         <a target="_blank" href="https://github.com/kylechadha?tab=repositories"><i class="fa fa-github-square rotate"></i></a>
         <a target="_blank" href="https://www.linkedin.com/in/kylechadha"><i class="fa fa-linkedin-square rotate"></i></a>
         <a target="_blank" href="https://twitter.com/kylechadha"><i class="fa fa-twitter-square rotate"></i></a>
         <a href="mailto:kyle.chadha@gmail.com?Subject=Hello%20again"><i class="fa fa-envelope-square rotate"></i></a>
+      </div>
+
     </div>
-
-  </div>
-  <!-- END container-->
-
   </footer>
-  <!-- END footer CONTACT-->
 
-  </section>
-  <!--END section CONTACT -->
+</section>
