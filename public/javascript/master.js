@@ -1,16 +1,9 @@
-// Loading Screen
-$(window).load(function() { 
-  $(".loader").delay(400).fadeOut("slow"); 
-});
+///
+/// MASTER JS FILE
+/// ----------------------------------
 
-// Portfolio Section: Highlight current filter.
-$(".nav-bar a").click(function() {
-  $(".projects .nav-bar li").removeClass("current")
-  $(this).parent().addClass("current")
-  return false;
-});
-
-// Portfolio Section: FancyBox Plugin  
+// fancyBox Plugin Init
+// -----------------------------------
 $('.projects .fancy a').fancybox({
   'openEffect' : 'elastic',
   beforeLoad: function() {
@@ -31,12 +24,30 @@ $('.projects .fancy a').fancybox({
   }
 });
 
-// Portfolio Section: Isotope Plugin
+
+// Isotope Plugin Init
+// -----------------------------------
 var $container = $('.projects');
 $container.isotope();
 
 $('#filters li a').click(function(){
   var selector = $(this).attr('data-filter');
   $container.isotope({ filter: selector });
+  return false;
+});
+
+
+// Loading Screen JS
+// -----------------------------------
+$(window).load(function() { 
+  $(".loader").delay(400).fadeOut("slow"); 
+});
+
+
+// Projects Section JS
+// -----------------------------------
+$(".nav-bar a").click(function() {
+  $(".projects .nav-bar li").removeClass("current")
+  $(this).parent().addClass("current")
   return false;
 });
