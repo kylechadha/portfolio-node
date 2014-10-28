@@ -218,7 +218,7 @@ $(document).ready(function(){
    * This part causes smooth scrolling using scrollto.js
    * We target all a tags inside the nav, and apply the scrollto.js to it.
    */
-  $("body a").not(".noteasing").click(function(evn){
+  $(".navbar a").not(".noteasing").click(function(evn){
       evn.preventDefault();
       $('html,body').scrollTo(this.hash, this.hash); 
   });
