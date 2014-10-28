@@ -2,26 +2,31 @@
   padding-bottom: 100px;
 
   .projects {
+    // ** Add webkit prefixes to all of these and make sure they all get fixed in safari!
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    // Add webkit prefixes to all of these and make sure they all get fixed in safari!
-    flex-wrap: wrap;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
 
     article {
-      height: 212px;
-      width: 260px;
-      margin: 12px;
+      height: 290px;
+      width: 353px;
+      margin-bottom: 27px;
+      margin-right: 27px;
       background-color: rgb(237, 237, 237);
       border: 5px solid rgb(237, 237, 237);
       &:first-of-type {
-        padding: 10px;
+        padding: 20px;
       }
       h4 {
         text-transform: uppercase;
       }
       img {
-        max-width:100%;
-        max-height:100%;
+        max-width: 100%;
+        max-height: 100%;
       }
     }
   }

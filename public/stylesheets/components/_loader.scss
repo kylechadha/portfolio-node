@@ -8,6 +8,9 @@
   height: 100%;
   width: 100%;
   z-index: 9999;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: center;

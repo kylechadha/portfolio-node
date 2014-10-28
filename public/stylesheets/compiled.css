@@ -151,6 +151,9 @@ input.submit:hover {
   height: 100%;
   width: 100%;
   z-index: 9999;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: center;
@@ -312,17 +315,22 @@ input.submit:hover {
 #sectionProjects {
   padding-bottom: 100px; }
   #sectionProjects .projects {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    flex-wrap: wrap; }
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap; }
     #sectionProjects .projects article {
-      height: 212px;
-      width: 260px;
-      margin: 12px;
+      height: 290px;
+      width: 353px;
+      margin-bottom: 27px;
+      margin-right: 27px;
       background-color: #ededed;
       border: 5px solid #ededed; }
       #sectionProjects .projects article:first-of-type {
-        padding: 10px; }
+        padding: 20px; }
       #sectionProjects .projects article h4 {
         text-transform: uppercase; }
       #sectionProjects .projects article img {

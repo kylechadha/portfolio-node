@@ -3,22 +3,22 @@ $(window).load(function() {
 });
 
 // Portfolio Section: General Configuration
-function equalHeight(group) {
-  var tallest = 0;
-  group.each(function() {
-    var thisHeight = $(this).height();
-    if(thisHeight > tallest) {
-      tallest = thisHeight;
-    }
-  });
-  group.height(tallest);
-}
-equalHeight($(".portfolio article"));
+// function equalHeight(group) {
+//   var tallest = 0;
+//   group.each(function() {
+//     var thisHeight = $(this).height();
+//     if(thisHeight > tallest) {
+//       tallest = thisHeight;
+//     }
+//   });
+//   group.height(tallest);
+// }
+// equalHeight($(".portfolio article"));
 
-$(".menu-trigger").click(function() {
-  $("#menu").fadeToggle(300);
-  $(this).toggleClass("active")
-});
+// $(".menu-trigger").click(function() {
+//   $("#menu").fadeToggle(300);
+//   $(this).toggleClass("active")
+// });
 
 $(".nav-bar a").click(function() {
   $(".portfolio .nav-bar li").removeClass("current")
